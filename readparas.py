@@ -4,9 +4,9 @@ import json
 def read_paras():
     # df = pd.read_json('./example-del.json')
     # print(df[0])
-    with open('chrome_cloudflare.json') as f:
+    with open('safari_google.json') as f:
         data = json.load(f)
-    print("---Chrome cloudflare---")
+    # print("---Chrome cloudflare---")
     print("initial_max_stream_data_uni: ", data['tls.quic.parameter.initial_max_stream_data_uni'])
     print("max_datagram_frame_size: ",data['tls.quic.parameter.max_datagram_frame_size'])
     print("initial_source_connection_id: ", data['tls.quic.parameter.initial_source_connection_id'])

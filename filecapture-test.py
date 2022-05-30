@@ -10,7 +10,7 @@ iface_name = 'en0'
 filter_string = 'port 443'
 
 # building our live capture instance
-capture = pyshark.FileCapture(input_file="/Users/rukshani/Documents/code-227/fingerprint/chrome_cloudflare.pcapng")
+capture = pyshark.FileCapture(input_file="/Users/rukshani/Documents/code-227/fingerprint/safari_google.pcapng")
 
 # for capturing the traffic
 # timeout of 5 seconds and a limit of 10 packets total
@@ -25,7 +25,7 @@ def writeByteStringToFile(out, data):
     out.write(json.dumps(data))
     out.write("\n")
 
-filename = "chrome_cloudflare.json"
+filename = "safari_google.json"
 out = open(filename, 'w')
 i = 1
 j = 1
